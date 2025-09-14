@@ -39,4 +39,4 @@ Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **ger
 - 🗂 **Mimari:** CQRS (Command–Query Ayrımı) + Folder Structure  
 - 🗄️ **Database:** MS SQL Server  
 - 🖼 **UI Yönetimi:** ViewComponent  
-- 🎨 **Frontend:** HTML5
+- 🎨 **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 
