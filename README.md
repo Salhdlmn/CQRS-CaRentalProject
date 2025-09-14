@@ -39,4 +39,36 @@ Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **ger
 - 🗂 **Mimari:** CQRS (Command–Query Ayrımı) + Folder Structure  
 - 🗄️ **Database:** MS SQL Server  
 - 🖼 **UI Yönetimi:** ViewComponent  
-- 🎨 **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 
+- 🎨 **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
+
+  ---
+
+## 📸 Ekran Görselleri  
+
+### 🏠 Kullanıcı Arayüzü
+| About | Category | Service |
+|-------|----------|---------|
+| ![About](Images/About.png) | ![Category](Images/Category.png) | ![Service](Images/Service.png) |
+
+| Araç Ara | Araç Listesi | Araba Listesi |
+|----------|--------------|---------------|
+| ![AraçAra](Images/AraçAra.png) | ![AraçListesi](Images/AraçListesi.png) | ![ArabaListesi](Images/ArabaListesi.png) |
+
+| Contact | Contact AI | Remain |
+|---------|------------|--------|
+| ![Contact](Images/Contact.png) | ![Contact-AI](Images/Contact-AI.png) | ![Remain](Images/Remain.png) |
+
+---
+
+### 🛡️ Yönetici Paneli
+| Dashboard | Feature | Statistics |
+|-----------|---------|------------|
+| ![Dashboard](Images/Dashboard.png) | ![Feature](Images/Feature.png) | ![Statistics](Images/Statistics.png) |
+
+---
+
+### 🤖 Ekstralar
+| AI |
+|----|
+| ![AI](Images/AI.png) |
+
