@@ -1,71 +1,42 @@
-🚙 ASP.NET Core 9.0 & CQRS ile Araç Kiralama Platformu
+# 🚙 ASP.NET Core 9.0 & CQRS ile Araç Kiralama Platformu  
 
-Bu repository, ASP.NET Core 9.0 ve CQRS mimarisi ile geliştirilmiş modern bir araç kiralama uygulamasını içerir.
-Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda gerçek dünyaya uyarlanabilir, sürdürülebilir ve genişletilebilir bir altyapı geliştirmektir.
+Bu repository, **ASP.NET Core 9.0** ve **CQRS mimarisi** ile geliştirilmiş modern bir araç kiralama uygulamasını içerir.  
+Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **gerçek dünyaya uyarlanabilir, sürdürülebilir ve genişletilebilir** bir altyapı geliştirmektir.  
 
-📌 Genel Bakış
+---
 
-🔹 Mimari Yapı → CQRS prensipleriyle okuma ve yazma operasyonları ayrıştırıldı.
-🔹 Veritabanı → MS SQL Server üzerinde ilişkisel tablolar tasarlandı.
-🔹 UI Yapısı → Tekrarlayan bileşenler ViewComponent ile izole edilerek yeniden kullanılabilirlik sağlandı.
-🔹 API Entegrasyonları → Yakıt fiyatları, havalimanları ve mesafe hesaplama servisleri uygulamaya entegre edildi.
+## 📌 Genel Bakış  
 
-🚀 Öne Çıkan Özellikler
+- 🔹 **Mimari Yapı** → CQRS prensipleriyle okuma ve yazma operasyonları ayrıştırıldı.  
+- 🔹 **Veritabanı** → MS SQL Server üzerinde ilişkisel tablolar tasarlandı.  
+- 🔹 **UI Yapısı** → Tekrarlayan bileşenler ViewComponent ile izole edilerek yeniden kullanılabilirlik sağlandı.  
+- 🔹 **API Entegrasyonları** → Yakıt fiyatları, havalimanları ve mesafe hesaplama servisleri uygulamaya entegre edildi.  
 
-⚛️ ViewComponent Tabanlı UI → Araç listeleri, maliyet hesaplama ve chatbot alanı bağımsız bileşenler halinde geliştirildi.
+---
 
-⛽ Yakıt Fiyatları API → Türkiye’de güncel benzin, motorin ve LPG fiyatları
+## 🚀 Öne Çıkan Özellikler  
 
-✈️ Havalimanı Servisi → Tüm havalimanlarının dinamik listelenmesi
+- ⚛️ **ViewComponent Tabanlı UI** → Araç listeleri, maliyet hesaplama ve chatbot alanı bağımsız bileşenler halinde geliştirildi.  
+- ⛽ **Yakıt Fiyatları API** → Türkiye’de güncel benzin, motorin ve LPG fiyatları  
+- ✈️ **Havalimanı Servisi** → Tüm havalimanlarının dinamik listelenmesi  
+- 📏 **Mesafe Hesaplama** → İki havalimanı arasındaki mesafenin otomatik hesaplanması  
+- 🤖 **Chatbot Entegrasyonu** → Kullanıcı mesajlarını yanıtlayan basit yapay zekâ destekli bot  
+- 🚗 **Araç Öneri Asistanı** → Kullanıcı ihtiyaçlarına göre SUV, sedan, ekonomik gibi kategorilerde araç tavsiyesi  
 
-📏 Mesafe Hesaplama → İki havalimanı arasındaki mesafenin otomatik hesaplanması
+---
 
-🤖 Chatbot Entegrasyonu → Kullanıcı mesajlarını yanıtlayan basit yapay zekâ destekli bot
+## 🎯 Projenin Vizyonu  
 
-🚗 Araç Öneri Asistanı → Kullanıcı ihtiyaçlarına göre SUV, sedan, ekonomik gibi kategorilerde araç tavsiyesi
+- 🎯 CQRS mimarisiyle **okunabilir ve sürdürülebilir kod** üretmek  
+- 📊 Gerçek API verileri ile **dinamik ve güvenilir** bir uygulama geliştirmek  
+- 🧩 **Sektörel uygulamalara uyarlanabilecek** sağlam bir temel oluşturmak  
 
-🎯 Projenin Amacı
+---
 
-🎯 CQRS mimarisiyle okunabilir ve sürdürülebilir kod üretmek
-📊 Gerçek API verileri ile dinamik ve güvenilir bir uygulama geliştirmek
-🧩 Sektörel uygulamalara uyarlanabilecek sağlam bir temel oluşturmak
+## 🛠 Kullanılan Teknolojiler  
 
-🛠 Kullanılan Teknolojiler
-
-💻 Backend: ASP.NET Core 9.0
-
-🗂 Mimari: CQRS (Command–Query Ayrımı) + Folder Structure
-
-🗄️ Database: MS SQL Server
-
-🖼 UI Yönetimi: ViewComponent
-
-🎨 Frontend: HTML5, CSS3, Bootstrap, JavaScript
-
-🔌 API Entegrasyonları:
-
-⛽ Yakıt fiyatları servisi
-
-✈️ Havalimanı listesi
-
-📏 Mesafe hesaplama
-
-🤖 Chatbot
-
-📊 Modüller
-
-👥 Kullanıcı Arayüzü
-
-🚘 Araç arama & rezervasyon
-
-⛽ Yakıt maliyet hesaplama
-
-📏 Havalimanı mesafe ölçümü
-
-🤖 Chatbot destekli iletişim
-
-🛡️ Yönetim Paneli
-
-📝 CRUD işlemleri (Araçlar, Rezervasyonlar, Havalimanları)
-
-📊 Dashboard ekranı (istatistikler & raporlar)
+- 💻 **Backend:** ASP.NET Core 9.0  
+- 🗂 **Mimari:** CQRS (Command–Query Ayrımı) + Folder Structure  
+- 🗄️ **Database:** MS SQL Server  
+- 🖼 **UI Yönetimi:** ViewComponent  
+- 🎨 **Frontend:** HTML5
