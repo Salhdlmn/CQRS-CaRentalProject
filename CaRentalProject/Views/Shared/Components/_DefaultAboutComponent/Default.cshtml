@@ -1,0 +1,81 @@
+﻿@model GetAboutQueryResult
+<div class="container-fluid overflow-hidden about py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-item">
+                    <div class="pb-5">
+                        <h1 class="display-5 text-capitalize">CaRental <span class="text-primary">Hakkımızda</span></h1>
+                        <p class="mb-0">
+                        @Model.Description
+                        </p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="about-item-inner border p-4">
+                                <div class="about-icon mb-4">
+                                    <img src="/Cental-1.0.0/img/about-icon-1.png" class="img-fluid w-50 h-50" alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Vizyonumuz</h5>
+                                <p class="mb-0">@Model.Vision</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-item-inner border p-4">
+                                <div class="about-icon mb-4">
+                                    <img src="/Cental-1.0.0/img/about-icon-2.png" class="img-fluid h-50 w-50" alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Misyonumuz</h5>
+                                <p class="mb-0">@Model.Mision</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-item my-4">
+                        17 yıllık deneyimimizle sadece araç kiralamıyoruz; konfor, güven ve memnuniyet sağlıyoruz.
+                        Binlerce müşterimizin memnuniyetiyle büyüyen bu yolculukta, ihtiyaçlarınıza en uygun çözümü sunmak için buradayız.
+                        Geniş araç filomuz, esnek kiralama seçeneklerimiz ve güler yüzlü ekibimizle siz nereye gitmek isterseniz oraya birlikte gidiyoruz.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="text-center rounded bg-secondary p-4">
+                                <h1 class="display-6 text-white">17</h1>
+                                <h5 class="text-light mb-0">Yıllık Deneyim</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="rounded">
+                                <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Geniş araç filosu ve her bütçeye uygun modeller</p>
+                                <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i>7/24 yol yardımı ve müşteri desteği</p>
+                                <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Şeffaf ve sürprizsiz fiyatlandırma</p>
+                                <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> Hızlı teslimat ve kolay iade süreci</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <a href="#" class="btn btn-primary rounded py-3 px-5">Daha Fazla</a>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex align-items-center">
+                                <img src="/Cental-1.0.0/img/attachment-img.jpg" class="img-fluid rounded-circle border border-4 border-secondary" style="width: 100px; height: 100px;" alt="Image">
+                                <div class="ms-4">
+                                    <h4>Ahmet Yıldız</h4>
+                                    <p class="mb-0">Kurucu Ortak</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="about-img">
+                    <div class="img-1">
+                        <img src="/Cental-1.0.0/img/about-img.jpg" class="img-fluid rounded h-100 w-100" alt="">
+                    </div>
+                    <div class="img-2">
+                        <img src="/Cental-1.0.0/img/about-img-1.jpg" class="img-fluid rounded w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

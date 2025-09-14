@@ -1,0 +1,162 @@
+﻿@model DashboardViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+ 
+    <div class="row">
+        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="d-flex align-items-center align-self-start">
+                                <h3 class="mb-0">@Model.GasPrices.gasolineTL</h3>
+                                <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="icon icon-box-success ">
+                                <span class="mdi mdi-arrow-top-right icon-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal"> Türkiye Ortalama Benzin Fiyatı</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="d-flex align-items-center align-self-start">
+                                <h3 class="mb-0">@Model.GasPrices.dieselTL</h3>
+                                <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="icon icon-box-success">
+                                <span class="mdi mdi-arrow-top-right icon-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal">Türkiye Ortalama Motorin Fiyatı</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="d-flex align-items-center align-self-start">
+                                <h3 class="mb-0">@Model.GasPrices.lpgTL</h3>
+                                <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="icon icon-box-danger">
+                                <span class="mdi mdi-arrow-bottom-left icon-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-muted font-weight-normal">Türkiye Ortalama Otogaz Fiyatı</h6>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Araç Markalarına Göre Ortalama Puan</h4>
+                    <canvas id="brandReviewLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h4 class="card-title mb-1">Yakıt Türüne Göre Araç Sayısı</h4>
+             
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container mt-4">
+                                <canvas id="fuelTypeBarChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var labels = @Html.Raw(Json.Serialize(Model.LabelReviewChart.Labels));
+    var reviews = @Html.Raw(Json.Serialize(Model.LabelReviewChart.Reviews));
+
+    new Chart(document.getElementById("brandReviewLineChart"), {
+        type: 'line',
+        data: {
+            labels: labels,   // örn. ["Audi", "Mercedes", "Tesla"]
+            datasets: [{
+                label: 'Ortalama Puan',
+                data: reviews, // örn. [4.2, 4.8, 4.15]
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                tension: 0.3,
+                pointRadius: 6,
+                pointHoverRadius: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    min: 3.0,
+                    max: 5.0,
+                    ticks: { stepSize: 0.1 }
+                }
+            }
+        }
+    });
+</script>
+<script>
+    var labels = @Html.Raw(Json.Serialize(Model.FuelTypeChart.Labels));
+    var counts = @Html.Raw(Json.Serialize(Model.FuelTypeChart.Counts));
+
+    new Chart(document.getElementById("fuelTypeBarChart"), {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Araç Sayısı',
+                data: counts,
+                backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+</script>
