@@ -25,7 +25,7 @@ Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **ger
 
 ---
 
-## 🎯 Projenin Vizyonu  
+## 🎯 Projenin Amacı  
 
 - 🎯 CQRS mimarisiyle **okunabilir ve sürdürülebilir kod** üretmek  
 - 📊 Gerçek API verileri ile **dinamik ve güvenilir** bir uygulama geliştirmek  
