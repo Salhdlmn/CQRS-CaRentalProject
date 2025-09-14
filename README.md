@@ -46,7 +46,7 @@ Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **ger
 ## 📸 Ekran Görselleri  
 
 ### 🏠 Kullanıcı Arayüzü
-| About | Category | Service |
+| Hakkımızda | Kategori | Hizmet |
 |-------|----------|---------|
 | ![About](Images/About.png) | ![Category](Images/Category.png) | ![Service](Images/Service.png) |
 
@@ -54,7 +54,7 @@ Projenin amacı yalnızca temel bir demo oluşturmak değil; aynı zamanda **ger
 |----------|--------------|---------------|
 | ![AraçAra](Images/AraçAra.png) | ![AraçListesi](Images/AraçListesi.png) | ![ArabaListesi](Images/ArabaListesi.png) |
 
-| Contact | Contact AI | Remain |
+| İletişim | İletişim AI | Remain |
 |---------|------------|--------|
 | ![Contact](Images/Contact.png) | ![Contact-AI](Images/Contact-AI.png) | ![Remain](Images/Remain.png) |
 
